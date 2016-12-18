@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         listFiles(path);
     }
     private boolean listFiles(String path){
-        name="路径为："+path+"\n文件清单：\n";
+        name="路径："+path+"\n文件清单：\n";
         File file=new File(path);
         if (file.listFiles()!=null&&file.listFiles().length>0){
             for (File f:file.listFiles()){
